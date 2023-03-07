@@ -1,25 +1,31 @@
+import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import Head from "./Head"
 import "./header.css"
-import React from "react"
+
+
 
 const Header = () => {
+  const [click, setClick] = useState(false)
 
   return (
     <>
       <Head />
       <header>
         <nav className='flexSB'>
-          <ul className="flexSB">
-            <li> <Link to=''>Home</Link></li>
-            <li><Link to=''>Job</Link></li>
-            <li><Link to=''>Test</Link></li>
-            <li><Link to=''>Profile</Link></li>
-            <li><Link to=''>Login</Link></li>
+          <ul className={click ? "mobile-nav" : "flexSB "} onClick={() => setClick(false)}>
+            <li><Link to='/contact'>Home</Link></li>
+            <li><Link to='/contact'>Job</Link></li>
+            <li><Link to='/contact'>Test</Link></li>
+            <li><Link to='/contact'>Profile</Link></li>
+            <li><Link to='/contact'>Login</Link></li>
           </ul>
           <div className="start">
-            <div className="button">Somaiya University</div>
+            <div className="button"><b>Somaiya University</b></div>
           </div>
+          <button className='toggle' onClick={() => setClick(!click)}>
+            {click ? <i className='fa fa-times'> </i> : <i className='fa fa-bars'></i>}
+          </button>
         </nav>
       </header>
     </>
