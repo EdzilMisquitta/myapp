@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom"
 import Head from "./Head"
 import "./header.css"
-import "./../../../../src/"
+import React from "react"
 
 const Header = () => {
 
   return (
     <>
       <Head />
-      <Header>
+      <header>
         <nav className='flexSB'>
           <ul className="flexSB">
             <li> <Link to=''>Home</Link></li>
@@ -20,7 +20,7 @@ const Header = () => {
             <div className="button">Somaiya University</div>
           </div>
         </nav>
-      </Header>
+      </header>
     </>
   )
 }
