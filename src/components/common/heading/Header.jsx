@@ -15,6 +15,7 @@ const Header = () => {
             <li><Link to=''>Job</Link></li>
             <li><Link to=''>Test</Link></li>
             <li><Link to=''>Profile</Link></li>
+            <li><Link to=''>Login</Link></li>
           </ul>
           <div className="start">
             <div className="button">Somaiya University</div>
