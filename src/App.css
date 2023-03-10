@@ -42,3 +42,6 @@ li {
 .row {
   width: 50%;
 }
+button{
+  border: none;
+}

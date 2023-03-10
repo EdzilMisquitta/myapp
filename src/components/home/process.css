@@ -1,0 +1,36 @@
+.tp{
+    color: #ffffff;
+    margin-top: 180px;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: center; 
+    background-image: url("../../../public/image/keyboard.jpg");
+}
+.t1{
+    width: 20%;
+    display: inline-block;
+    /* box-shadow: 2px 2px 20px black;
+    border-radius: 5px;   */
+    margin: 2%;
+    line-height: 1.8;
+}
+.h2{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.big{
+    font-size: 50px;
+}
+.h{
+    padding-top: 35px;
+}
+@media screen and (max-width: 768px) {
+    /* .top {
+      background-position: right;
+      padding-top: 50%;
+      height: 80vh;
+    } */
+    .tp .t1 {
+      width: 100%;
+    }
+  }
